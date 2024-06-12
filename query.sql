@@ -26,7 +26,7 @@ where price >= 20 and price <= 100;
 
 # 5. Напишіть SQL команду, за допомогою якої можна знайти кількість продуктів (рядків) та середню ціну (price) у кожного
 # постачальника (supplier_id)
-select count(id) as productAmount, avg(price) as avaragePrice
+select supplier_id, count(id) as productAmount, avg(price) as avaragePrice
 from products
 group by supplier_id
 
